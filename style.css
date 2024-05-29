@@ -1,0 +1,73 @@
+.xwing {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+.body {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 80px;
+    background: #333;
+    transform: translate(-50%, -50%);
+}
+.cockpit {
+    position: relative;
+    top: -10px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: #555;
+    transform: translate(-50%, -50%);
+}
+.wing {
+    position: relative;
+    width: 150px;
+    height: 10px;
+    background: #888;
+}
+.wing.top-left {
+    top: 40px;
+    left: -100px;
+    transform: rotate(30deg);
+}
+.wing.top-right {
+    top: 40px;
+    right: -100px;
+    transform: rotate(-30deg);
+}
+.wing.bottom-left {
+    bottom: 40px;
+    left: -100px;
+    transform: rotate(-30deg);
+}
+.wing.bottom-right {
+    bottom: 40px;
+    right: -100px;
+    transform: rotate(30deg);
+}
+.engine {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #444;
+    border-radius: 50%;
+}
+.engine.top-left {
+    top: 20px;
+    left: -120px;
+}
+.engine.top-right {
+    top: 20px;
+    right: -120px;
+}
+.engine.bottom-left {
+    bottom: 20px;
+    left: -120px;
+}
+.engine.bottom-right {
+    bottom: 20px;
+    right: -120px;
+}
