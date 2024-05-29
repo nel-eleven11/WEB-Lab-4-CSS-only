@@ -2,32 +2,27 @@
 <html>
     <head>
         <title>Dibujo X-wing</title>
-
-        <style>
-            .xwing {
-                position: relative;
-                width: 200px;
-                height: 200px;
-                margin: 100px auto;
-            }
-            .body {
-                position: relative;
-                top: 50%;
-                left: 50%;
-                width: 50px;
-                height: 80px;
-                background: #333;
-                transform: translate(-50%, -50%);
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
 
         <div class="xwing">
-            <div class="body"></div>
-
-        </div>
+            <div class="wings">
+              <div class="wing left"></div>
+              <div class="body">
+                <div class="cockpit"></div>
+              </div>
+              <div class="wing right"></div>
+            </div>
+            <div class="wings">
+              <div class="wing bottom-left"></div>
+              <div class="wing bottom-right"></div>
+            </div>
+            <div class="engines">
+              <div class="engine"></div>
+              <div class="engine"></div>
+            </div>
+          </div>
         
     </body>
 </html>
