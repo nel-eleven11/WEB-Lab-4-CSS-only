@@ -24,7 +24,6 @@ body {
     bottom: 0;
     width: 100%;
     height: 0%;
-    transform: translateX(100px);
     background: #32CD32;
     background-image: radial-gradient(circle, #3CB371 2%, transparent 2%), radial-gradient(circle, #3CB371 2%, transparent 2%);
     background-size: 3% 3%;
@@ -41,7 +40,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    top: 5%; 
+    left: -35%; 
+    transform: translate(-50%, -50%);   
     animation: bounce 2s infinite;
     transition: background 0.5s, transform 0.5s;
 }
