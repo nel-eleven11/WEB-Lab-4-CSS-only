@@ -39,11 +39,11 @@ body {
 }
 
 .semi-pentagon.bottom_1{
-    transform: translateY(62px) translateX(70px) rotate(-42deg);
+    transform: translateX(62px) translateY(69px) rotate(-38deg);
 }
 
 .semi-pentagon.bottom_2 {
-    transform: translateY(68px) translateX(-75px) rotate(38deg);
+    transform: translateX(-75px) translateY(68px) rotate(38deg);
 }
 
 .semi-pentagon.left {
@@ -63,25 +63,25 @@ body {
 
 .line.top {
     top: 25px;
-    transform: rotate(-2deg) translateY(0px)  translateX(-1px) ;
+    transform: translateX(-3px) translateY(-3px) rotate(0deg);
 }
 
 .line.bottom_1 {
     bottom: 25px;
-    transform: rotate(0deg) translateY(0px)  translateX(-1px);
+    transform: translateX(-23px)  translateY(1px) rotate(45deg);
 }
 
 .line.bottom_2 {
     bottom: 25px;
-    transform: rotate(0deg) translateY(0px)  translateX(-1px);
+    transform: translateX(20px) translateY(2px) rotate(-47deg);
 }
 
 .line.left {
     left: 50px;
-    transform: rotate(120deg) translateY(0px)  translateX(-1px);
+    transform: translateX(-5px) translateY(-12px) rotate(-77deg);
 }
 
 .line.right {
     right: 50px;
-    transform: rotate(-120deg) translateY(0px)  translateX(-1px);
+    transform: translateX(2px) translateY(-14px) rotate(77deg);
 }
