@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: green;
+}
+
+.ball {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball::before,
+.ball::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: black;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.ball::before {
+    top: 0;
+    left: 25%;
+}
+
+.ball::after {
+    bottom: 0;
+    right: 25%;
+}
+
+.panel {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: black;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.panel:nth-child(1) {
+    top: 25%;
+    left: 0;
+}
+
+.panel:nth-child(2) {
+    top: 0;
+    left: 25%;
+}
+
+.panel:nth-child(3) {
+    top: 25%;
+    right: 0;
+}
+
+.panel:nth-child(4) {
+    bottom: 0;
+    left: 25%;
+}
+
+.panel:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
