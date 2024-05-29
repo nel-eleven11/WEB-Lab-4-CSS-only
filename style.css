@@ -17,50 +17,35 @@ body {
     align-items: center;
 }
 
-.ball::before,
-.ball::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    
-}
-
-.ball::before {
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-}
-
 .pentagon {
     position: relative;
-    width: 60px;
+    width: 70px;
     height: 60px;
     background: black;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transform: translateX(75px);
 }
 
 .semi-pentagon {
-    position: absolute;
+    position: relative;
     width: 50px;
     height: 25px;
     background: black;
-    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%); 
 }
 
 .semi-pentagon.top {
-    top: 20px;
+    transform: translateY(-85px)  translateX(27px) rotate(180deg);
 }
 
 .semi-pentagon.bottom {
-    bottom: 20px;
+    transform: translateY(86px) translateX(-5px);
 }
 
 .semi-pentagon.left {
-    left: 20px;
-    transform: rotate(90deg);   
+    transform: translateX(-129px) rotate(90deg);
 }
 
 .semi-pentagon.right {
-    right: 20px;
-    transform: rotate(-90deg);
+    transform: translateX(5px) rotate(-90deg);
 }
